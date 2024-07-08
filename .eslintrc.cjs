@@ -5,6 +5,7 @@ module.exports = {
     es6: true,
     node: true,
     browser: true,
+    jest: true,
   },
 
   parser: '@typescript-eslint/parser',
@@ -14,7 +15,14 @@ module.exports = {
     useJSXTextNode: true,
   },
 
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'eslint-config-prettier', 'plugin:react/recommended', 'plugin:cypress/recommended', 'plugin:storybook/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'eslint-config-prettier',
+    'plugin:react/recommended',
+    'plugin:cypress/recommended',
+    'plugin:storybook/recommended',
+  ],
   plugins: ['@typescript-eslint', 'import', 'prettier', 'react', 'react-hooks'],
   settings: { react: { version: 'detect' } },
 
